@@ -199,6 +199,7 @@ This repository implements several probabilistic models for analyzing tensile an
 
 ## Three-Parameter Weibull Distribution
 **CDF:**
+
 $$
 F(x) = 1 - \exp\left[-\left(\frac{x-\theta}{\eta}\right)^\beta\right]
 $$
