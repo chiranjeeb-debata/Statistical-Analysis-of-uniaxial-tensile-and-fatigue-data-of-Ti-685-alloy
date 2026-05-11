@@ -204,6 +204,7 @@ $$
 F(x) = 1 - \exp\left[-\left(\frac{x-\theta}{\eta}\right)^\beta\right]
 $$
 
+
 **PDF:**
 $$
 f(x) = \frac{\beta}{\eta}\left(\frac{x-\theta}{\eta}\right)^{\beta-1}
