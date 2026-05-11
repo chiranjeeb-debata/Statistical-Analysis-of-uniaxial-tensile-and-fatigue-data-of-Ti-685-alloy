@@ -1,0 +1,5 @@
+# Ignore all Excel files
+*.xlsx
+git rm --cached *.xlsx
+git commit -m "Remove confidential Excel files"
+git push origin main
