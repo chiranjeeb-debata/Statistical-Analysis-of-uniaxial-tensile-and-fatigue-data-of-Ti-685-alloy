@@ -189,7 +189,72 @@ $$
 Where:  
 - $E_a$ = activation energy  
 - $R$ = gas constant  
-- $T$ = absolute temperature  
+- $T$ = absolute temperature
+
+# Probabilistic Models for Fatigue Life Prediction
+
+This repository implements several probabilistic models for analyzing tensile and fatigue data of Ti-685 alloy.
+
+---
+
+##  Three Parameter Weibull Distribution
+**CDF:**
+$$
+F(x) = 1 - \exp\left[-\left(\frac{x-\theta}{\eta}\right)^\beta\right]
+$$
+
+**PDF:**
+$$
+f(x) = \frac{\beta}{\eta}\left(\frac{x-\theta}{\eta}\right)^{\beta-1}\exp\left[-\left(\frac{x-\theta}{\eta}\right)^\beta\right]
+$$
+
+**Significance:** Used in [reliability prediction](ca://s?q=Weibull_distribution_in_reliability) and fatigue life modeling.
+
+---
+
+##  Weibull Distribution with Power Law
+**CDF:**
+$$
+F(x) = 1 - \exp\left[-\left(\frac{x}{\eta}\right)^\beta\right]
+$$
+
+**Fatigue Life Model:**
+$$
+N_f = \exp\left(Ut + W_t \ln(T) + \frac{1}{\beta}\ln\ln\frac{1}{1-F(x)}\right)
+$$
+
+**Significance:** Captures [power-law scaling](ca://s?q=Power_law_in_fatigue) in crack growth.
+
+---
+
+##  Lognormal Distribution
+**PDF:**
+$$
+f(x) = \frac{1}{(x-\gamma)\sigma\sqrt{2\pi}} \exp\left[-\frac{(\ln(x-\gamma)-\mu)^2}{2\sigma^2}\right]
+$$
+
+**Significance:** Models [multiplicative variability](ca://s?q=Lognormal_distribution_in_fatigue) in fatigue and crack growth.
+
+---
+
+##  Gumbel Distribution
+**CDF:**
+$$
+F(x) = \exp\left[-\exp\left(-\frac{x-\mu}{\beta}\right)\right]
+$$
+
+**Significance:** Useful for [extreme value analysis](ca://s?q=Gumbel_distribution_in_reliability), predicting weakest-link failures.
+
+---
+
+##  Gamma Distribution
+**PDF:**
+$$
+f(x) = \frac{1}{\Gamma(k)\theta^k} x^{k-1} e^{-x/\theta}
+$$
+
+**Significance:** Applied in [lifetime modeling](ca://s?q=Gamma_distribution_in_reliability) when failure rates vary over time.
+
 
 ## 2. Data Preprocessing
 
