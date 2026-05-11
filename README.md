@@ -206,6 +206,7 @@ $$
 
 
 **PDF:**
+
 $$
 f(x) = \frac{\beta}{\eta}\left(\frac{x-\theta}{\eta}\right)^{\beta-1}
        \exp\left[-\left(\frac{x-\theta}{\eta}\right)^\beta\right]
@@ -217,11 +218,13 @@ $$
 
 ## Weibull Distribution with Power Law
 **CDF:**
+
 $$
 F(x) = 1 - \exp\left[-\left(\frac{x}{\eta}\right)^\beta\right]
 $$
 
 **Fatigue Life Model:**
+
 $$
 N_f = \exp\left(Ut + W_t \ln(T) + \frac{1}{\beta}\ln\ln\frac{1}{1-F(x)}\right)
 $$
@@ -232,6 +235,7 @@ $$
 
 ## Lognormal Distribution
 **PDF:**
+
 $$
 f(x) = \frac{1}{(x-\gamma)\sigma\sqrt{2\pi}}
        \exp\left[-\frac{\big(\ln(x-\gamma)-\mu\big)^2}{2\sigma^2}\right]
@@ -243,6 +247,7 @@ $$
 
 ## Gumbel Distribution
 **CDF:**
+
 $$
 F(x) = \exp\left[-\exp\left(-\frac{x-\mu}{\beta}\right)\right]
 $$
@@ -253,6 +258,7 @@ $$
 
 ## Gamma Distribution
 **PDF:**
+
 $$
 f(x) = \frac{1}{\Gamma(k)\theta^k} \, x^{k-1} e^{-x/\theta}
 $$
