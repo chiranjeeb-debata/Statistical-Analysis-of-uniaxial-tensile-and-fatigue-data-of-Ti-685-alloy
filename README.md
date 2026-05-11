@@ -142,61 +142,54 @@ Built a user-friendly web application that allows engineers to:
 
 # Statistical Models Used
 
-## Weibull Distribution
+# 📊 Statistical Distributions & Models in Fatigue Analysis
 
-Widely used in reliability engineering and fatigue analysis.
+## 🔹 Weibull Distribution
+Widely used in **reliability engineering** and **fatigue analysis**.
 
-Applications:
+**Applications:**
+- Failure probability estimation  
+- Reliability prediction  
+- Fatigue life modeling  
 
-* Failure probability estimation
-* Reliability prediction
-* Fatigue life modeling
+**Probability Density Function (PDF):**
 
-The Weibull probability density function:
+$$
+f(x) = \frac{\beta}{\eta} \left(\frac{x}{\eta}\right)^{\beta - 1} e^{-\left(\frac{x}{\eta}\right)^\beta}
+$$
 
-genui{"math_block_widget_always_prefetch_v2":{"content":"f(x)=\frac{\beta}{\eta}\left(\frac{x}{\eta}\right)^{\beta-1}e^{-\left(\frac{x}{\eta}\right)^\beta}"}}
-
-Where:
-
-* ( \beta ) = shape parameter
-* ( \eta ) = scale parameter
-
----
-
-## Lognormal Distribution
-
-Used to model multiplicative fatigue variability and crack growth behavior.
-
-genui{"math_block_widget_always_prefetch_v2":{"content":"f(x)=\frac{1}{x\sigma\sqrt{2\pi}}e^{-\frac{(\ln x-\mu)^2}{2\sigma^2}}"}}
+Where:  
+- $\beta$ = shape parameter  
+- $\eta$ = scale parameter  
 
 ---
 
-## Arrhenius Temperature Model
+## 🔹 Lognormal Distribution
+Used to model **multiplicative fatigue variability** and **crack growth behavior**.
 
-Used to study thermal dependency of fatigue behavior.
+**Probability Density Function (PDF):**
 
-k=Ae^{-\frac{E_a}{RT}}
+$$
+f(x) = \frac{1}{x\sigma\sqrt{2\pi}} \exp\left(-\frac{(\ln x - \mu)^2}{2\sigma^2}\right)
+$$
 
-Where:
-
-* (E_a) = activation energy
-* (R) = gas constant
-* (T) = temperature
-
----
-
-# Methodology
-
-## 1. Data Collection
-
-Experimental datasets include:
-
-* Tensile test results
-* Fatigue crack growth rate (FCGR) data
-* Thermal condition variations
-* Vendor comparison datasets
+Where:  
+- $\mu$ = mean of log values  
+- $\sigma$ = standard deviation of log values  
 
 ---
+
+## 🔹 Arrhenius Temperature Model
+Used to study **thermal dependency of fatigue behavior**.
+
+$$
+k = A e^{-\frac{E_a}{R T}}
+$$
+
+Where:  
+- $E_a$ = activation energy  
+- $R$ = gas constant  
+- $T$ = absolute temperature  
 
 ## 2. Data Preprocessing
 
