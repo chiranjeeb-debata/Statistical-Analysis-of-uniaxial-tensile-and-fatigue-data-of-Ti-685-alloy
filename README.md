@@ -197,7 +197,7 @@ This repository implements several probabilistic models for analyzing tensile an
 
 ---
 
-##  Three Parameter Weibull Distribution
+## Three-Parameter Weibull Distribution
 **CDF:**
 $$
 F(x) = 1 - \exp\left[-\left(\frac{x-\theta}{\eta}\right)^\beta\right]
@@ -205,14 +205,15 @@ $$
 
 **PDF:**
 $$
-f(x) = \frac{\beta}{\eta}\left(\frac{x-\theta}{\eta}\right)^{\beta-1}\exp\left[-\left(\frac{x-\theta}{\eta}\right)^\beta\right]
+f(x) = \frac{\beta}{\eta}\left(\frac{x-\theta}{\eta}\right)^{\beta-1}
+       \exp\left[-\left(\frac{x-\theta}{\eta}\right)^\beta\right]
 $$
 
 **Significance:** Used in [reliability prediction](ca://s?q=Weibull_distribution_in_reliability) and fatigue life modeling.
 
 ---
 
-##  Weibull Distribution with Power Law
+## Weibull Distribution with Power Law
 **CDF:**
 $$
 F(x) = 1 - \exp\left[-\left(\frac{x}{\eta}\right)^\beta\right]
@@ -227,17 +228,18 @@ $$
 
 ---
 
-##  Lognormal Distribution
+## Lognormal Distribution
 **PDF:**
 $$
-f(x) = \frac{1}{(x-\gamma)\sigma\sqrt{2\pi}} \exp\left[-\frac{(\ln(x-\gamma)-\mu)^2}{2\sigma^2}\right]
+f(x) = \frac{1}{(x-\gamma)\sigma\sqrt{2\pi}}
+       \exp\left[-\frac{\big(\ln(x-\gamma)-\mu\big)^2}{2\sigma^2}\right]
 $$
 
 **Significance:** Models [multiplicative variability](ca://s?q=Lognormal_distribution_in_fatigue) in fatigue and crack growth.
 
 ---
 
-##  Gumbel Distribution
+## Gumbel Distribution
 **CDF:**
 $$
 F(x) = \exp\left[-\exp\left(-\frac{x-\mu}{\beta}\right)\right]
@@ -247,13 +249,14 @@ $$
 
 ---
 
-##  Gamma Distribution
+## Gamma Distribution
 **PDF:**
 $$
-f(x) = \frac{1}{\Gamma(k)\theta^k} x^{k-1} e^{-x/\theta}
+f(x) = \frac{1}{\Gamma(k)\theta^k} \, x^{k-1} e^{-x/\theta}
 $$
 
 **Significance:** Applied in [lifetime modeling](ca://s?q=Gamma_distribution_in_reliability) when failure rates vary over time.
+
 
 
 ## 2. Data Preprocessing
