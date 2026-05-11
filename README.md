@@ -142,9 +142,9 @@ Built a user-friendly web application that allows engineers to:
 
 # Statistical Models Used
 
-# 📊 Statistical Distributions & Models in Fatigue Analysis
+# Statistical Distributions & Models in Fatigue Analysis
 
-## 🔹 Weibull Distribution
+## Weibull Distribution
 Widely used in **reliability engineering** and **fatigue analysis**.
 
 **Applications:**
@@ -164,7 +164,7 @@ Where:
 
 ---
 
-## 🔹 Lognormal Distribution
+## Lognormal Distribution
 Used to model **multiplicative fatigue variability** and **crack growth behavior**.
 
 **Probability Density Function (PDF):**
@@ -179,7 +179,7 @@ Where:
 
 ---
 
-## 🔹 Arrhenius Temperature Model
+## Arrhenius Temperature Model
 Used to study **thermal dependency of fatigue behavior**.
 
 $$
