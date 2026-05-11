@@ -265,7 +265,8 @@ $$
 
 **Significance:** Applied in [lifetime modeling](ca://s?q=Gamma_distribution_in_reliability) when failure rates vary over time.
 
-
+For detailed derivations and fatigue life prediction equations, see the full document:
+**Probability_model_derivations.pdf**
 
 ## 2. Data Preprocessing
 
