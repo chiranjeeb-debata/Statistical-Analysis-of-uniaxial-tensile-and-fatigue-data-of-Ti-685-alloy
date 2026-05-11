@@ -332,12 +332,20 @@ This work is relevant for:
 
 ---
 
+## Data Confidentiality Notice
+The datasets used in this project (Ti-685 alloy tensile and fatigue data) are **confidential** and are **NOT included** in this repository.  
+They are proprietary to the research group and cannot be shared, copied, or redistributed.  
+
+This repository provides **code, models, and documentation only**.  
+Users may run the code with their own datasets, but the original data is restricted.
+
+
 # Future Improvements
 
 * Integration of deep learning based life prediction
 * Bayesian reliability analysis
 * Monte Carlo simulation for uncertainty propagation
-* Real-time sensor data integration
+* Real time sensor data integration
 * Digital twin integration for aerospace systems
 * Deployment on cloud platforms
 
