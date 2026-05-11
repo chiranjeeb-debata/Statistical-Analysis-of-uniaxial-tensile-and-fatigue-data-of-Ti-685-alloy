@@ -431,8 +431,6 @@ Users may run the code with their own datasets, but the original data is restric
 # Author
 
 **Chiranjeeb Debata**
-
-B.Tech Mechanical Engineering
 ---
 
 # Acknowledgment
